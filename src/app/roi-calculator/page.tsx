@@ -105,7 +105,6 @@ export default function ROIPage() {
           transition={{ duration: 0.8 }}
           className="mb-16 relative group rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl p-2 bg-white/5 backdrop-blur-2xl"
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent z-10 pointer-events-none"></div>
           <Image 
              src="/images/golf/page5_highres.png" 
              alt="Enter Golftalk.io Dashboard via Pro Shop" 

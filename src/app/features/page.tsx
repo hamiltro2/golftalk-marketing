@@ -73,7 +73,7 @@ export default function FeaturesPage() {
               title: "24/7 Call Answering & Booking",
               desc: "GolfTalk answers your facility's phone instantly, 24 hours a day, 365 days a year. It converses completely naturally with guests to book tee times, handle walk-on availability, and process reservations directly into your existing tee sheet without ever placing anyone on hold.",
               color: "green",
-              imagePath: "/images/golf/feature_booking.png"
+              imagePath: "/images/golf/feature_booking_clean.png"
             },
             {
               title: "Customizable Greetings & Multi-Lingual",

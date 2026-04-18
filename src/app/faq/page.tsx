@@ -56,9 +56,8 @@ export default function FAQPage() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mb-16 relative group rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl p-2 bg-white/5 backdrop-blur-2xl"
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent z-10 pointer-events-none"></div>
           <Image 
-             src="/images/golf/page3_highres.png" 
+             src="/images/golf/page6_highres.png" 
              alt="The Hospitality Bottleneck" 
              width={1000} 
              height={600} 
@@ -83,6 +82,26 @@ export default function FAQPage() {
             {
               q: "Does GolfTalk send booking reminders?",
               a: "Yes, the system acts as a full-service dispatcher. It can automatically send reminders and confirmations via voice, text/SMS, or email to reduce no-shows and combat last-minute cancellations."
+            },
+            {
+              q: "Does this integrate with my existing tee sheet software?",
+              a: "Absolutely. GolfTalk is engineered to integrate bidirectionally with the leading modern tee sheets and scheduling software. Whenever a booking is made, modified, or canceled over the phone, it instantly synchronizes with your live software in real-time."
+            },
+            {
+              q: "What happens if a caller asks a question the AI hasn't been trained on?",
+              a: "GolfTalk utilizes an Intelligent Human Handoff protocol. If a caller has a highly specific or complex inquiry (like planning a 50-person corporate event) that falls outside its programmed parameters, it elegantly transitions the call to a designated staff member or takes a detailed message for management to return."
+            },
+            {
+              q: "How does the AI perform with accents or noisy background environments?",
+              a: "Our voice engine utilizes bleeding-edge speech-to-text transcription models designed to isolate voices from background interference (like wind or driving down the highway). It flawlessly understands regional accents, dialects, and varied speaking speeds with near-zero latency."
+            },
+            {
+              q: "How long does it take to deploy GolfTalk at my facility?",
+              a: "Our typical onboarding timeline ranges from 3 to 7 days. Our deployment team conducts a comprehensive audit of your operations, imports your existing data, records your custom voice profiles, and rigorously tests the AI in a sandboxed environment before seamlessly switching the routing over to your live phone lines."
+            },
+            {
+              q: "Can the system be used strictly for after-hours or overflow traffic?",
+              a: "Yes. You have total granular control over routing logic. You can deploy GolfTalk to answer 100% of inbound calls, or configure it as your ultimate safety net—only stepping in when the phone rings more than three times, or exclusively activating after your front desk closes for the evening."
             }
           ].map((item, i) => (
             <motion.details 
