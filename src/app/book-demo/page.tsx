@@ -81,7 +81,6 @@ export default function BookDemoPage() {
           >
             Your browser does not support the video tag.
           </video>
-          <AnimatedSoundwave />
         </motion.div>
 
         {/* Calendar / Form Placeholder Section */}

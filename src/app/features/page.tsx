@@ -37,7 +37,7 @@ export default function FeaturesPage() {
              transition={{ duration: 0.8 }}
              className="text-6xl md:text-8xl font-display font-bold text-white mb-8 tracking-tighter leading-[0.9]"
           >
-            How GolfTalk <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600">Works</span>
+            How GolfTalk <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 pr-2">Works</span>
           </motion.h1>
           <motion.p 
              initial={{ opacity: 0, y: 20 }}
