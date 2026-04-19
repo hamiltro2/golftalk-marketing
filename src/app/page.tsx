@@ -95,9 +95,9 @@ export default function Home() {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 1 }}
-                 className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-20 
-                            bg-[#111827]/60 backdrop-blur-3xl border border-white/10 
-                            rounded-3xl p-6 md:p-10 shadow-[0_30px_60px_rgba(0,0,0,0.9)] 
+                 className="absolute bottom-4 md:bottom-12 left-1/2 -translate-x-1/2 z-20 
+                            bg-black/40 border border-white/10 
+                            rounded-2xl md:rounded-3xl p-5 md:p-10 shadow-[0_30px_60px_rgba(0,0,0,0.5)] 
                             flex flex-col items-center text-center w-[90%] max-w-[500px]"
               >
                  <div className="flex items-center gap-4 mb-4">
@@ -256,7 +256,7 @@ export default function Home() {
            whileInView={{ opacity: 1, scale: 1 }}
            viewport={{ once: true }}
            transition={{ duration: 1, ease: "easeOut" }}
-           className="relative rounded-[3rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.6)] border border-white/10 group aspect-video md:aspect-[21/9]"
+           className="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.6)] border border-white/10 group min-h-[500px] md:min-h-0 md:aspect-[21/9]"
         >
           {/* Background Image */}
           <Image 
@@ -270,23 +270,23 @@ export default function Home() {
           {/* Floating UI Overlay */}
           <div className="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-20 max-w-3xl">
             
-            <h3 className="text-4xl md:text-5xl font-display font-medium text-white mb-6 tracking-tight leading-[1.1] drop-shadow-xl">
-              Seamless <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Human Handoff.</span>
+            <h3 className="text-3xl md:text-5xl font-display font-medium text-white mb-4 md:mb-6 tracking-tight leading-[1.1] drop-shadow-xl">
+              Seamless <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 pr-1">Human Handoff.</span>
             </h3>
             
-            <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed drop-shadow-lg mb-10 max-w-2xl">
+            <p className="text-base md:text-2xl text-gray-300 font-light leading-relaxed drop-shadow-lg mb-8 md:mb-10 max-w-2xl">
               Free your staff from fielding routine questions so they can focus on delivering premium hospitality. When VIP guests need specialized attention, the AI instantly connects them to your designated Pro Shop manager.
             </p>
             
-            <div className="flex bg-white/5 backdrop-blur-md border border-white/10 rounded-full p-2 max-w-sm">
-               <div className="flex-1 px-4 py-2 flex items-center gap-3">
+            <div className="flex bg-white/5 backdrop-blur-md border border-white/10 rounded-full p-2 max-w-sm flex-col sm:flex-row gap-2 sm:gap-0">
+               <div className="flex-1 px-4 py-2 flex items-center justify-center sm:justify-start gap-3">
                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                 <span className="text-white text-sm font-medium tracking-wide">AI Managing Traffic</span>
+                 <span className="text-white text-xs sm:text-sm font-medium tracking-wide">AI Managing Traffic</span>
                </div>
-               <div className="w-[1px] bg-white/20"></div>
-               <div className="flex-1 px-4 py-2 flex items-center gap-3">
+               <div className="hidden sm:block w-[1px] bg-white/20"></div>
+               <div className="flex-1 px-4 py-2 flex items-center justify-center sm:justify-start gap-3 border-t border-white/10 sm:border-t-0">
                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                 <span className="text-white text-sm font-medium tracking-wide">Staff on Standby</span>
+                 <span className="text-white text-xs sm:text-sm font-medium tracking-wide">Staff on Standby</span>
                </div>
             </div>
           </div>
